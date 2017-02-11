@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>关于我</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/addLoadEvent.js"></script>
+	<script type="text/javascript" src="js/positionMessage.js"></script>
+	<script type="text/javascript" src="js/moveElement.js"></script>
+  <script type="text/javascript" src="js/navscrollto.js"></script>
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+        $(function(){
+            $(window).scroll(function(){
+            	if($(window).scrollTop()>=($(window).height())){
+            		$("nav").addClass("fixedNav");
+            	}
+            	else{
+            		$("nav").removeClass("fixedNav");
+            	}
+            })
+
+
+        })
+	</script>
+</head>
+
+
+  <div id="welcome-page" >
+  	   <div id="message">
+  	           <h1>Hello World!</h1>
+  	   </div>	
+  	   <div  id="pageonedown" class="down">
+  	        <span class="glyphicon glyphicon-chevron-down" onclick="GoTwo();">  </span>
+  	   </div>
+  </div>
+
+
+
+  <div id="introduce-page" > 
+     <nav>
+       	<div class="my-name"> <a href="" onfocus="this.blur()" onclick="GoTop();return false;">江世灏</a></div>
+        <div class="nav-right">
+        <a href="" onfocus="this.blur()" onclick="GoTwo();return false;">个人简历</a>	
+        <a href="" onfocus="this.blur()" onclick="GoThree();return false;">专业技能</a>
+        <a href="" onfocus="this.blur()" onclick="GoFour();return false;">项目经验</a>
+        <a href="" onfocus="this.blur()" onclick="GoBottom();return false;">联系方式</a>	
+        </div>
+     </nav>
+
+<div class="introduce-web">
+        <div id="web-one"><a href="#" onfocus="this.blur()" alt="github链接"></a></div>
+        <div id="web-two"><a href="#" onfocus="this.blur()"  alt="拉勾网链接"></a></div>
+        <div id="web-myself"><a href="#" onfocus="this.blur()" onclick="return false;" ></a></div>
+        <div id="web-three"><a href="#" onfocus="this.blur()" alt="知乎链接"></a></div>
+</div>
+        <div id="introduce-less">
+        <p class="wordT">&nbsp;姓名|江世灏-Harry Holmes</p>
+        <p class="wordT">&nbsp;手机|18507210565       </p>
+        <p class="wordT">&nbsp;邮箱|18507210565@wo.cn</p>
+        <p class="wordTh">所在地|湖北-武汉       </p>
+        <p class="wordF">GitHub|<a href="#" onfocus="this.blur()">点击进入 </a> </p>
+        <p class="wordTh">拉勾网|<a href="#" onfocus="this.blur()">点击进入 </a> </p>
+        <p class="wordT">&nbsp;知乎|<a href="#" onfocus="this.blur()">点击进入 </a>       </p>
+
+        </div>
+
+        <div id="introduce-more">
+         <p>我是一个性格幽默，做事认真的人。</p>
+         <p>我喜欢阅读。通过书籍、博客加上自己实践研究各种技术细节。</p>
+         <p>我拥有时间观念，做事绝不拖延。</p>
+         <br>
+         <p>半年前端开发经验，熟悉HTML、CSS、Javascript,</p>
+         <p>能熟练写出复合W3C标准的页面，熟练使用jQuery</p>
+         <p>框架。曾写过jQuery插件。</p>
+         <p>有Linux基础，了解PHP+SQL、react.js，理解基本的</p>
+         <p>算法分析与数据结构。</p>
+        </div>
+
+       <div id="pagetwodown" class="down">
+  	        <span class="glyphicon glyphicon-chevron-down" onclick="GoThree()" >  </span>
+  	   </div>
+      
+  </div>
+
+
+
+
+  <div id="professional-skill">
+           <div class="personal-title"><h2>专 业 技 能</h2></div>
+       <div class="personal-language">
+       <span>语言</span>
+         <ul>
+           <li>HTML(5)</li>
+           <li>CSS(3)</li>
+           <li>Javascript</li>
+           <li>PHP</li>
+           <li>SQL</li>
+           <li>C/C++</li>
+         </ul>
+       </div>
+
+       <div class="personal-ideology">
+       <span>思想</span>
+         <ul>
+           <li>W3C标准</li>
+           <li>语义化</li>
+           <li>结构与表现分离</li>
+           <li>响应式设计</li>
+         </ul>
+       </div>
+
+       <div class="personal-frame">
+       <span>框架</span>
+         <ul>
+           <li>jQuery</li>
+           <li>Bootstrap</li>
+           <li>Less</li>
+           <li>ReactJs</li>
+         </ul>
+       </div>
+
+       <div class="personal-software">
+       <span>软件</span>
+         <ul>
+           <li>SublimeText3</li>
+           <li>FireBug</li>
+           <li>Xampp</li>
+           <li>Photoshop</li>
+           <li>NodeJs</li>
+           <li>AutoCAD</li>
+         </ul>
+       </div>
+
+
+       <div  id="pagethreedown" class="down">  
+  	        <span class="glyphicon glyphicon-chevron-down" onclick="GoFour();">  </span>
+  	   </div>
+  </div>
+  	   
+
+
+
+  <div id="personal-program">
+  <div class="program-title"><h2>项 目 经 验</h2></div>
+  <div class="program-web">
+        <div id="program-one"><a href="#" onfocus="this.blur()"  onclick="return false;" ></a></div>
+        <div id="program-two"><a href="#" onfocus="this.blur()"   onclick="return false;" ></a></div>
+        <div id="program-three"><a href="#" onfocus="this.blur()" onclick="return false;" ></a></div>
+        <div id="program-text-one">
+        <span>个人博客</span>
+        <p>1234567891011121314</p>
+        <p>1234567891011121314</p>
+        <p>1234567891011121314</p>
+        <p>1234567891011121314</p>
+        <p>1234567891011121314</p>
+        </div>
+
+        <div id="program-text-two">
+        <span>Scroll插件</span>
+        <p>1234567891011121314</p>
+        <p>1234567891011121314</p>
+        <p>1234567891011121314</p>
+        <p>1234567891011121314</p>
+        <p>1234567891011121314</p>
+        </div>
+
+        <div id="program-text-three">
+        <span>购物商城</span>
+        <p>1234567891011121314</p>
+        <p>1234567891011121314</p>
+        <p>1234567891011121314</p>
+        <p>1234567891011121314</p>
+        <p>1234567891011121314</p>
+        </div>
+</div>
+ 
+  	   <div  id="pagefourdown" class="down">
+  	        <span class="glyphicon glyphicon-chevron-down" onclick="GoBottom();">  </span>
+  	   </div>
+  </div>
+
+
+
+
+
+  <div id="contact-me">
+        <div class="contact">
+            <p>快把我收到碗里吧</p>
+            <p>18507210565@wo.cn</p>
+        </div>
+  	    <div id="pagefiveup">
+  	        <span class="glyphicon glyphicon-chevron-up" onclick="GoTop();">  </span>
+  	   </div>
+  </div>
+
+</body>
+</html>
